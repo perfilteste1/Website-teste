@@ -1,0 +1,150 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 1rem 2rem;
+    z-index: 999;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: yellow;
+}
+
+/* Hero Section */
+header {
+    height: 100vh;
+    background: linear-gradient(to right, yellow, orange);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-logo h1 {
+    font-size: 4rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.scroll-hint {
+    margin-top: 2rem;
+    animation: bounce 2s infinite;
+}
+
+.arrow-down {
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    transform: rotate(-45deg);
+    margin: auto;
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#about {
+    background: white;
+    color: black;
+}
+
+#portfolio {
+    background: lightgray;
+    color: black;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Careers Section */
+#careers {
+    background: white;
+    color: black;
+}
+
+/* Contact Section */
+#contact {
+    background: black;
+    color: white;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: black;
+    color: white;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

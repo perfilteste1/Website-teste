@@ -1,94 +1,64 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Solaria Studios</title>
-    <link rel="stylesheet" href="styles.css">
-    <script defer src="scripts.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Solaria Studios</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="home">
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#careers">Careers</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
-        </nav>
-        <div class="hero">
-            <div class="hero-logo">
-                <h1 class="logo-animation">Solaria Studios</h1>
-            </div>
-            <p class="tagline">Bringing Stories to Life with Innovation and Passion</p>
-            <div class="scroll-hint">
-                <p>Scroll Down</p>
-                <div class="arrow-down"></div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- About Us Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>At Solaria Studios, we are dedicated to crafting captivating stories through TV shows, movies, and series. With a passion for creativity and innovation, we bring ideas to life that inspire and entertain audiences worldwide.</p>
-        </section>
-
-        <!-- Portfolio Section -->
-        <section id="portfolio">
-            <h2>Our Work</h2>
-            <div class="portfolio-grid">
-                <div class="portfolio-item">
-                    <img src="placeholder1.jpg" alt="Project 1">
-                    <div class="hover-overlay">
-                        <p>Project Title 1</p>
-                    </div>
-                </div>
-                <div class="portfolio-item">
-                    <img src="placeholder2.jpg" alt="Project 2">
-                    <div class="hover-overlay">
-                        <p>Project Title 2</p>
-                    </div>
-                </div>
-                <!-- Add more portfolio items as needed -->
-            </div>
-        </section>
-
-        <!-- Careers Section -->
-        <section id="careers">
-            <h2>Join Our Team</h2>
-            <form id="job-application-form">
-                <input type="text" id="name" name="name" placeholder="Full Name" required>
-                <input type="email" id="email" name="email" placeholder="Email Address" required>
-                <input type="text" id="position" name="position" placeholder="Position Applying For" required>
-                <input type="url" id="portfolio-link" name="portfolio" placeholder="Portfolio Link (Optional)">
-                <textarea id="message" name="message" placeholder="Tell us a bit about yourself" required></textarea>
-                <button type="submit">Submit Application</button>
-            </form>
-        </section>
-
-        <!-- Contact Us Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div class="social-media">
-                <p>Follow us:</p>
-                <a href="#" class="social-icon">Facebook</a>
-                <a href="#" class="social-icon">Twitter</a>
-                <a href="#" class="social-icon">Instagram</a>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2025 Solaria Studios. All rights reserved.</p>
-    </footer>
+  <!-- Navegação -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Solaria Studios</div>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#portfolio">Portfólio</a></li>
+        <li><a href="#careers">Carreiras</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>  <!-- Seção Hero -->  <section class="hero">
+    <div class="hero-content">
+      <div class="logo-animation">SS</div>
+      <h1>Solaria Studios</h1>
+      <p>Dando vida a histórias com visão e criatividade</p>
+      <div class="scroll-hint">↓</div>
+    </div>
+  </section>  <!-- Seção Sobre -->  <section id="about" class="section about">
+    <h2>Sobre Nós</h2>
+    <div class="about-content">
+      <p>A Solaria Studios é uma produtora de ponta especializada na criação de séries, filmes e programas de TV de alta qualidade. Movida por paixão e impulsionada pela inovação, nossa equipe transforma ideias ousadas em narrativas visuais impressionantes.</p>
+    </div>
+  </section>  <!-- Seção Portfólio -->  <section id="portfolio" class="section portfolio">
+    <h2>Nosso Trabalho</h2>
+    <div class="portfolio-grid">
+      <!-- Itens de pôster repetíveis -->
+      <div class="portfolio-item"><img src="https://via.placeholder.com/300x450" alt="Pôster 1" /><div class="overlay">Título do Projeto</div></div>
+      <div class="portfolio-item"><img src="https://via.placeholder.com/300x450" alt="Pôster 2" /><div class="overlay">Título do Projeto</div></div>
+      <div class="portfolio-item"><img src="https://via.placeholder.com/300x450" alt="Pôster 3" /><div class="overlay">Título do Projeto</div></div>
+    </div>
+  </section>  <!-- Seção Carreiras -->  <section id="careers" class="section careers">
+    <h2>Junte-se ao Nosso Time</h2>
+    <form id="job-form">
+      <input type="text" name="name" placeholder="Seu Nome" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <input type="text" name="position" placeholder="Cargo Desejado" required />
+      <input type="url" name="portfolio" placeholder="Link do Portfólio" />
+      <textarea name="message" placeholder="Sua Mensagem" required></textarea>
+      <button type="submit">Enviar Candidatura</button>
+    </form>
+    <div class="form-message"></div>
+  </section>  <!-- Seção Contato -->  <section id="contact" class="section contact">
+    <h2>Fale Conosco</h2>
+    <p>Email: contato@solariastudios.com</p>
+    <p>Endereço: Av. Visão Criativa, 123 - Cidade Imaginária</p>
+    <div class="social-icons">
+      <a href="#"><img src="https://via.placeholder.com/24" alt="Instagram" /></a>
+      <a href="#"><img src="https://via.placeholder.com/24" alt="Twitter" /></a>
+      <a href="#"><img src="https://via.placeholder.com/24" alt="LinkedIn" /></a>
+    </div>
+  </section>
 </body>
-</html>
+          </html>
